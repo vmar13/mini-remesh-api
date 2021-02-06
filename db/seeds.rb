@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Conversation.destroy_all
+
+
+##Conversations
+tattoo = Conversation.create(title: "tattoo", start_date: Date.parse("2021-02-06"))
+music = Conversation.create(title: "music", start_date: Date.parse("2021-02-06"))
+
