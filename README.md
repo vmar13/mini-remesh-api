@@ -13,5 +13,6 @@ To view the frontend repo, visit: https://github.com/vmar13/mini-remesh-client
 2. Run "bundle install" to install dependencies
 3. Run "rails db:seed" to seed the database
 4. Run "rails s" to start the server
-5. Start the frontend using the link above
+5. To run the specs, type: "bundle exec rspec"
+6. Start the frontend using the link above
 

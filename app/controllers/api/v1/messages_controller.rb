@@ -7,7 +7,10 @@ class Api::V1::MessagesController < ApplicationController
 
   def show
     message = Message.find(params[:id])
-    render json: message, include: [:thoughts]
+    # render json: message, include: [:thoughts]
+    render json: message.as_json.merge({
+      thoughts: (message.thoughts)
+    }) 
   end
 
   def new
